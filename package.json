@@ -1,0 +1,44 @@
+{
+  "name": "@usecart/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for the Cart e-commerce intelligence API",
+  "author": "Cart",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "@usecart/mcp-server": "./dist/index.js",
+    "cart-mcp-server": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "@usecart/sdk": "file:../cart-sdk",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cart",
+    "ecommerce",
+    "ai",
+    "shopify",
+    "dropshipping"
+  ]
+}
