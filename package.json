@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",
-    "@usecart/sdk": "file:../cart-sdk",
+    "@usecart/sdk": "^0.1.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
